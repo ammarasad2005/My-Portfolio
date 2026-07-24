@@ -58,7 +58,7 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
                 
                 <div className="w-full h-full relative overflow-hidden">
                   <Image 
-                    src="/assets/desk_sketch_illustration.png" 
+                    src="/assets/desk_sketch_illustration.webp" 
                     alt="Developer Workbench Sketch" 
                     fill
                     className="object-contain opacity-90"
@@ -232,7 +232,7 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
               
               <div className="w-full h-full relative">
                 <Image 
-                  src="/assets/desk_sketch_illustration.png" 
+                  src="/assets/desk_sketch_illustration.webp" 
                   alt="Developer Workbench Sketch" 
                   fill
                   className="object-contain opacity-90"
