@@ -62,23 +62,23 @@ export default function ExperienceScreen({ onNavigate }: ExperienceScreenProps) 
     <div className="flex flex-col gap-8">
       {/* PAGE TITLE & STICKY NOTE */}
       <div className="flex items-center justify-between pt-1">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#1F1F1F]">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#1F1F1F] dark:text-[#F5F2EE]">
           Experience
         </h1>
 
         {/* Taped Sticky Note */}
-        <div className="relative bg-[#EAE1BD] border border-[#D8CEAA] shadow-xs rotate-[3deg] px-5 py-2.5 rounded-2xs select-none">
-          <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 w-12 h-4.5 bg-[#F4ECDA]/85 backdrop-blur-[1px] border border-[#D8CCAF]/70 shadow-2xs rotate-[-1deg]"></div>
-          <span className="font-script text-2xl sm:text-3xl text-[#2D2B26] block leading-tight text-center pt-1">
+        <div className="relative bg-[#EAE1BD] dark:bg-[#3d3a30] border border-[#D8CEAA] dark:border-[#4a4540] shadow-xs rotate-[3deg] px-5 py-2.5 rounded-2xs select-none">
+          <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 w-12 h-4.5 bg-[#F4ECDA]/85 dark:bg-[#4a4530]/85 backdrop-blur-[1px] border border-[#D8CCAF]/70 shadow-2xs rotate-[-1deg]"></div>
+          <span className="font-script text-2xl sm:text-3xl text-[#2D2B26] dark:text-[#F5F2EE] block leading-tight text-center pt-1">
             The journey<br />so far
           </span>
         </div>
       </div>
 
       {/* VERTICAL CHRONOLOGICAL TIMELINE */}
-      <div className="relative pl-6 ml-2 border-l-2 border-[#D5CBB9] flex flex-col gap-8 my-2 pt-2">
+      <div className="relative pl-6 ml-2 border-l-2 border-[#D5CBB9] dark:border-[#3a3530] flex flex-col gap-8 my-2 pt-2">
         {experiences.map((exp, index) => (
-          <div key={index} className="relative flex flex-col gap-1 pb-2 border-b border-[#E0D8CE]/40 last:border-b-0">
+          <div key={index} className="relative flex flex-col gap-1 pb-2 border-b border-[#E0D8CE]/40 dark:border-[#33302c]/40 last:border-b-0">
             {/* Timeline Node Dot */}
             <div className="absolute -left-[31px] top-1.5 flex items-center justify-center">
               <motion.div
@@ -96,24 +96,24 @@ export default function ExperienceScreen({ onNavigate }: ExperienceScreenProps) 
                     ease: 'easeInOut',
                     delay: index * 0.4,
                   }}
-                  className="absolute h-3.5 w-3.5 rounded-full bg-[#1F1F1F]"
+                  className="absolute h-3.5 w-3.5 rounded-full bg-[#1F1F1F] dark:bg-[#F5F2EE]"
                 />
-                <span className="relative w-3.5 h-3.5 rounded-full bg-[#1F1F1F] border-2 border-[#F5F2EE] shadow-2xs" />
+                <span className="relative w-3.5 h-3.5 rounded-full bg-[#1F1F1F] dark:bg-[#F5F2EE] border-2 border-[#F5F2EE] dark:border-[#1a1714] shadow-2xs" />
               </motion.div>
             </div>
             
             {/* Date Badge */}
-            <span className="font-mono text-xs text-[#666666] font-medium">
+            <span className="font-mono text-xs text-[#666666] dark:text-[#999999] font-medium">
               {exp.period}
             </span>
 
             {/* Role Title */}
-            <h3 className="text-base sm:text-lg font-bold text-[#1F1F1F]">
+            <h3 className="text-base sm:text-lg font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">
               {exp.role}
             </h3>
 
             {/* Description */}
-            <p className="text-xs sm:text-sm text-[#555555] max-w-[500px] leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#555555] dark:text-[#aaaaaa] max-w-[500px] leading-relaxed">
               {exp.description}
             </p>
           </div>
@@ -124,7 +124,7 @@ export default function ExperienceScreen({ onNavigate }: ExperienceScreenProps) 
       <div className="flex items-center justify-between pt-4 relative">
         <button
           onClick={() => onNavigate && onNavigate('projects')}
-          className="inline-flex items-center gap-2 bg-[#1F1F1F] text-white px-5 py-2.5 rounded-md text-xs sm:text-sm font-medium hover:bg-[#333333] transition-all shadow-xs cursor-pointer"
+          className="inline-flex items-center gap-2 bg-[#1F1F1F] dark:bg-[#F5F2EE] text-white dark:text-[#1F1F1F] px-5 py-2.5 rounded-md text-xs sm:text-sm font-medium hover:bg-[#333333] dark:bg-[#dddddd] transition-all shadow-xs cursor-pointer"
         >
           <span>View all projects</span>
           <span className="text-sm">&rarr;</span>
