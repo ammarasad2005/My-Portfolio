@@ -1,0 +1,6 @@
+{
+  "name": "Developer Portfolio",
+  "description": "Personal developer portfolio built with Next.js and Tailwind CSS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
