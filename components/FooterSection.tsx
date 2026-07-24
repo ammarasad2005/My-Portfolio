@@ -226,11 +226,11 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
 
           {/* COLUMN 5: DESK SKETCH ILLUSTRATION CARD (Tablet: 5 cols | Desktop: 2 cols) */}
           <div className="col-span-1 md:col-span-5 lg:col-span-2 flex justify-center md:justify-end">
-            <div className="relative w-full max-w-[200px] h-[180px] sm:h-[210px] lg:h-[220px] border border-[#D8CEBA] bg-[#EFEADF]/60 p-2 rounded-xs shadow-2xs overflow-hidden">
-              {/* Top Tape Clip */}
-              <div className="absolute -top-2 right-4 w-10 h-3.5 bg-[#E2D4B9]/90 border border-[#D4C5A9] rotate-[2deg] z-10"></div>
+            <div className="relative w-full max-w-[200px] h-[180px] sm:h-[210px] lg:h-[220px] border border-[#D8CEBA] bg-[#EFEADF]/60 p-2 rounded-xs shadow-2xs">
+              {/* Diagonal Tape Clip on Canvas Frame (Leaves corner uncovered, stays outside photo) — matches mobile */}
+              <div className="absolute -top-1 -left-1 w-9 h-3.5 bg-[#E2D4B9]/90 border border-[#D4C5A9] -rotate-[38deg] z-10 shadow-2xs pointer-events-none"></div>
               
-              <div className="w-full h-full relative">
+              <div className="w-full h-full relative overflow-hidden">
                 <Image 
                   src="/assets/desk_sketch_illustration.webp" 
                   alt="Developer Workbench Sketch" 
