@@ -9,6 +9,7 @@ import SkillsAndToolsScreen from '@/components/SkillsAndToolsScreen';
 import ExperienceScreen from '@/components/ExperienceScreen';
 import ContactScreen from '@/components/ContactScreen';
 import FooterSection from '@/components/FooterSection';
+import {ThemeToggle} from '@/components/ThemeToggle';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>('home');
@@ -97,9 +98,7 @@ export default function App() {
               </button>
             </nav>
             
-            <div className="w-9 h-4.5 sm:w-10 sm:h-5 bg-[#1F1F1F] rounded-full p-0.5 flex items-center justify-end cursor-pointer shadow-xs shrink-0">
-              <div className="w-3.5 h-3.5 sm:w-4 sm:h-4 bg-white rounded-full shadow-xs"></div>
-            </div>
+            <ThemeToggle />
           </div>
         </header>
 
