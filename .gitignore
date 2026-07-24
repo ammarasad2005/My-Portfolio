@@ -5,3 +5,12 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Build artifacts
+tsconfig.tsbuildinfo
+next-env.d.ts.bak
+
+# Editor
+.vscode/
+.idea/
+*.swp
