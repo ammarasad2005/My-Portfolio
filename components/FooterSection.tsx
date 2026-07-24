@@ -99,7 +99,7 @@ export default function FooterSection() {
                 <div className="absolute -top-1 -left-1 w-9 h-3.5 bg-[#E2D4B9]/90 border border-[#D4C5A9] -rotate-[38deg] z-10 shadow-xs pointer-events-none"></div>
                 <div className="w-full h-full relative overflow-hidden">
                   <Image
-                    src="/assets/desk_sketch_illustration.svg"
+                    src="/assets/desk_sketch_illustration.webp"
                     alt="Developer workbench sketch"
                     fill
                     className="object-contain opacity-90"
@@ -271,7 +271,7 @@ export default function FooterSection() {
 
               <div className="w-full h-full relative">
                 <Image
-                  src="/assets/desk_sketch_illustration.svg"
+                  src="/assets/desk_sketch_illustration.webp"
                   alt="Developer workbench sketch"
                   fill
                   className="object-contain opacity-90"
