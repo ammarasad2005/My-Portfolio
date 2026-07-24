@@ -172,14 +172,14 @@ export default function SkillsAndToolsScreen() {
     <div className="flex flex-col gap-8">
       {/* PAGE TITLE & STICKY NOTE */}
       <div className="flex items-center justify-between gap-3 pt-1">
-        <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-[#1F1F1F]">
+        <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-[#1F1F1F] dark:text-[#F5F2EE]">
           Skills &amp; Tools
         </h1>
 
         {/* Taped Sticky Note */}
-        <div className="relative bg-[#EAE1BD] border border-[#D8CEAA] shadow-xs rotate-[2deg] px-2.5 py-1 sm:px-4 sm:py-2 rounded-2xs select-none shrink-0">
-          <div className="absolute -top-2.5 sm:-top-3 left-1/2 -translate-x-1/2 w-8 sm:w-10 h-3 sm:h-4 bg-[#F2E7CD]/80 backdrop-blur-[1px] border border-[#D4C5A9]/70 shadow-2xs rotate-[-1.5deg]"></div>
-          <span className="font-script text-base sm:text-2xl text-[#2D2B26] block leading-none pt-0.5 sm:pt-1">
+        <div className="relative bg-[#EAE1BD] dark:bg-[#3d3a30] border border-[#D8CEAA] dark:border-[#4a4540] shadow-xs rotate-[2deg] px-2.5 py-1 sm:px-4 sm:py-2 rounded-2xs select-none shrink-0">
+          <div className="absolute -top-2.5 sm:-top-3 left-1/2 -translate-x-1/2 w-8 sm:w-10 h-3 sm:h-4 bg-[#F2E7CD]/80 dark:bg-[#4a4530]/80 backdrop-blur-[1px] border border-[#D4C5A9]/70 dark:border-[#5a5045]/70 shadow-2xs rotate-[-1.5deg]"></div>
+          <span className="font-script text-base sm:text-2xl text-[#2D2B26] dark:text-[#F5F2EE] block leading-none pt-0.5 sm:pt-1">
             The tools I use
           </span>
         </div>
@@ -189,16 +189,16 @@ export default function SkillsAndToolsScreen() {
       <div className="flex flex-col gap-6 pt-2">
         {/* Group 1: Frontend */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-[#1F1F1F]">
+          <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-[#1F1F1F] dark:text-[#F5F2EE]">
             Frontend
           </h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-4">
             {frontendSkills.map((skill) => (
               <div key={skill.name} className="flex flex-col items-center gap-1.5 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#EAE5DC] border border-[#DDD6C9] rounded-xl flex items-center justify-center p-2.5 shadow-2xs group-hover:scale-105 transition-transform">
+                <div className="w-12 h-12 bg-[#EAE5DC] dark:bg-[#252220] border border-[#DDD6C9] dark:border-[#3a3530] rounded-xl flex items-center justify-center p-2.5 shadow-2xs group-hover:scale-105 transition-transform">
                   {skill.icon}
                 </div>
-                <span className="text-[11px] font-medium text-[#1F1F1F] text-center">
+                <span className="text-[11px] font-medium text-[#1F1F1F] dark:text-[#F5F2EE] text-center">
                   {skill.name}
                 </span>
               </div>
@@ -206,20 +206,20 @@ export default function SkillsAndToolsScreen() {
           </div>
         </div>
 
-        <div className="border-b border-[#E0D8CE]/50"></div>
+        <div className="border-b border-[#E0D8CE]/50 dark:border-[#33302c]/50"></div>
 
         {/* Group 2: Backend */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-[#1F1F1F]">
+          <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-[#1F1F1F] dark:text-[#F5F2EE]">
             Backend
           </h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-4">
             {backendSkills.map((skill) => (
               <div key={skill.name} className="flex flex-col items-center gap-1.5 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#EAE5DC] border border-[#DDD6C9] rounded-xl flex items-center justify-center p-2.5 shadow-2xs group-hover:scale-105 transition-transform">
+                <div className="w-12 h-12 bg-[#EAE5DC] dark:bg-[#252220] border border-[#DDD6C9] dark:border-[#3a3530] rounded-xl flex items-center justify-center p-2.5 shadow-2xs group-hover:scale-105 transition-transform">
                   {skill.icon}
                 </div>
-                <span className="text-[11px] font-medium text-[#1F1F1F] text-center">
+                <span className="text-[11px] font-medium text-[#1F1F1F] dark:text-[#F5F2EE] text-center">
                   {skill.name}
                 </span>
               </div>
@@ -227,20 +227,20 @@ export default function SkillsAndToolsScreen() {
           </div>
         </div>
 
-        <div className="border-b border-[#E0D8CE]/50"></div>
+        <div className="border-b border-[#E0D8CE]/50 dark:border-[#33302c]/50"></div>
 
         {/* Group 3: Tools & Others */}
         <div className="flex flex-col gap-3">
-          <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-[#1F1F1F]">
+          <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-[#1F1F1F] dark:text-[#F5F2EE]">
             Tools &amp; Others
           </h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-4">
             {toolsSkills.map((skill) => (
               <div key={skill.name} className="flex flex-col items-center gap-1.5 group cursor-pointer">
-                <div className="w-12 h-12 bg-[#EAE5DC] border border-[#DDD6C9] rounded-xl flex items-center justify-center p-2.5 shadow-2xs group-hover:scale-105 transition-transform">
+                <div className="w-12 h-12 bg-[#EAE5DC] dark:bg-[#252220] border border-[#DDD6C9] dark:border-[#3a3530] rounded-xl flex items-center justify-center p-2.5 shadow-2xs group-hover:scale-105 transition-transform">
                   {skill.icon}
                 </div>
-                <span className="text-[11px] font-medium text-[#1F1F1F] text-center">
+                <span className="text-[11px] font-medium text-[#1F1F1F] dark:text-[#F5F2EE] text-center">
                   {skill.name}
                 </span>
               </div>
@@ -250,14 +250,14 @@ export default function SkillsAndToolsScreen() {
       </div>
 
       {/* BOTTOM "ALWAYS LEARNING" KRAFT NOTE BANNER */}
-      <div className="relative w-full bg-[#E8E0D2] border border-[#D5CBB9] rounded-sm p-5 mt-2 flex items-center justify-between shadow-xs">
-        <div className="absolute -top-3 left-6 w-14 h-4.5 bg-[#F2E7CD]/80 backdrop-blur-[1px] border border-[#D4C5A9]/70 shadow-2xs rotate-[-1deg]"></div>
+      <div className="relative w-full bg-[#E8E0D2] dark:bg-[#2a2622] border border-[#D5CBB9] dark:border-[#3a3530] rounded-sm p-5 mt-2 flex items-center justify-between shadow-xs">
+        <div className="absolute -top-3 left-6 w-14 h-4.5 bg-[#F2E7CD]/80 dark:bg-[#4a4530]/80 backdrop-blur-[1px] border border-[#D4C5A9]/70 dark:border-[#5a5045]/70 shadow-2xs rotate-[-1deg]"></div>
         
         <div className="flex flex-col gap-1 pr-4">
-          <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1F1F1F]">
+          <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1F1F1F] dark:text-[#F5F2EE]">
             Always learning
           </h3>
-          <p className="font-script text-2xl sm:text-3xl text-[#2D2B26] leading-snug">
+          <p className="font-script text-2xl sm:text-3xl text-[#2D2B26] dark:text-[#F5F2EE] leading-snug">
             Currently exploring System Design, AI Integration and DevOps.
           </p>
         </div>

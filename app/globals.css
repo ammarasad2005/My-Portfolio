@@ -10,3 +10,7 @@
 .font-script {
   font-family: 'Reenie Beanie', 'Caveat', cursive;
 }
+
+/* Enable Tailwind v4 dark: variants driven by next-themes' .dark class strategy. */
+@custom-variant dark (&:where(.dark, .dark *));
+
