@@ -4,7 +4,7 @@ import {ThemeProvider} from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Muhammad Ammar Asad — Full-Stack Developer',
-  description: 'Full-stack developer in Islamabad. Backend AI Engineer intern at FlyRank AI. I build tools that replace manual work — a campus platform, a Chrome extension, a ride-hailing companion, a drama streaming site.',
+  description: 'Full-stack developer in Islamabad. Backend AI Engineer intern at FlyRank AI. I build web apps end-to-end — UI, API, database — that replace manual work. Four projects shipped, one live at FAST NUCES Islamabad.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

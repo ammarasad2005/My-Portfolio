@@ -50,8 +50,8 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
       <section className="flex flex-col gap-4 md:hidden pt-1 pb-2">
         {/* Headline */}
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#1F1F1F] dark:text-[#F5F2EE] leading-[1.18]">
-          I build tools that replace{' '}
-          <span className="text-[#D6702C]">manual work.</span>
+          I build full-stack web apps{' '}
+          <span className="text-[#D6702C]">that replace manual work.</span>
         </h1>
 
         {/* Integrated Micro Bio Card */}
@@ -81,7 +81,7 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
                 Available
               </span>
             </div>
-            <p className="text-xs text-[#555555] dark:text-[#aaaaaa] font-medium">Backend AI Engineer · FlyRank AI</p>
+            <p className="text-xs text-[#555555] dark:text-[#aaaaaa] font-medium">Full-Stack Developer · Intern @ FlyRank AI</p>
             <p className="text-[11px] text-[#666666] dark:text-[#999999] leading-tight">
               📍 Islamabad • CS @ FAST-NUCES
             </p>
@@ -135,11 +135,11 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
         {/* Left Column (Headline, Paragraph, CTA) */}
         <div className="col-span-1 md:col-span-7 flex flex-col justify-between gap-6">
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#1F1F1F] dark:text-[#F5F2EE] leading-[1.12]">
-            I build tools that replace{' '}
-            <span className="text-[#D6702C]">manual work.</span>
+            I build full-stack web apps{' '}
+            <span className="text-[#D6702C]">that replace manual work.</span>
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-[#555555] dark:text-[#aaaaaa] max-w-[500px] leading-relaxed">
-            Full-stack developer in Islamabad. Backend AI Engineer intern at FlyRank AI. I build tools because most software could work better than it does.
+            Full-stack developer in Islamabad. Backend AI Engineer intern at FlyRank AI. I build web apps end-to-end — UI, API, database — because most software could work better than it does.
           </p>
           <div>
             <button
@@ -187,9 +187,9 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
                 <path d="M 5,30 L 10,35 L 15,30" />
               </svg>
               <div className="flex flex-col font-script text-lg sm:text-xl leading-tight text-[#444444] dark:text-[#cccccc]">
-                <span>Builds</span>
-                <span>Integrates</span>
-                <span>Ships</span>
+                <span>Frontend</span>
+                <span>Backend</span>
+                <span>Database</span>
               </div>
             </div>
           </div>
@@ -324,7 +324,7 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
         <p className="text-xs sm:text-sm text-[#444444] dark:text-[#cccccc] font-medium">
           Currently exploring:{' '}
           <span className="font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">
-            Agentic AI — the robust kind, not the hype.
+            Agentic AI on the backend, full-stack by day.
           </span>
         </p>
         <button
