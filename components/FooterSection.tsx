@@ -30,7 +30,7 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
                 A.
               </span>
               <p className="text-[11px] text-[#555555] dark:text-[#aaaaaa] leading-relaxed">
-                Full-stack developer in Islamabad. Building web apps that replace spreadsheets, dashboards, and manual work.
+                Full-stack developer in Islamabad. I build and ship web apps.
               </p>
 
               {/* Social Icons Row */}
@@ -132,7 +132,7 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
               A.
             </span>
             <p className="text-xs text-[#555555] dark:text-[#aaaaaa] leading-relaxed max-w-[280px]">
-              Full-stack developer in Islamabad. Building web apps that replace spreadsheets, dashboards, and manual work.
+              Full-stack developer in Islamabad. I build and ship web apps.
             </p>
 
             {/* Social Icons Row */}

@@ -268,7 +268,7 @@ export default function SkillsAndToolsScreen() {
             Always learning
           </h3>
           <p className="font-script text-2xl sm:text-3xl text-[#2D2B26] dark:text-[#F5F2EE] leading-snug">
-            Currently exploring System design, AI integration, and multi-agent orchestration.
+            Currently exploring system design and AI.
           </p>
         </div>
 

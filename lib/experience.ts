@@ -16,28 +16,28 @@ export const experiences: ExperienceEntry[] = [
     role: 'Google Antigravity Community Hackathon — AISeekho',
     organization: 'Team of 5',
     description:
-      'Built Hamara-Rozgar, a 5-agent cooperative AI orchestrator for Pakistan\'s informal economy with multilingual parsing, OSM Nominatim geocoding, Supabase ledger, and Groq API.',
+      'Built Hamara-Rozgar — a 5-agent AI system for Pakistan\'s informal economy. Team of 5.',
   },
   {
     period: 'Jan 2025',
     role: 'National AI Hackathon',
     organization: 'atomcamp @ FAST-NUCES Islamabad',
     description:
-      'Participated as a solo competitor in a two-day national AI hackathon focused on agentic AI solutions.',
+      'Solo competitor. Two days, agentic AI.',
   },
   {
     period: 'Winter 2025',
     role: 'FAST Problem Solving Competition (FPSC)',
     organization: 'ACM NUCES',
     description:
-      'Competed in FAST-NUCES\'s inter-semester competitive programming challenge as a solo participant.',
+      'Solo competitor. FAST\'s inter-semester programming contest.',
   },
   {
     period: 'Sep 2024 – Dec 2024',
     role: 'Volunteer Literacy Tutor',
     organization: 'Karwaan-e-Mudabbir',
     description:
-      '16-hour community service engagement teaching basic literacy and mathematics to underprivileged students via Karwaan-e-Mudabbir\'s non-formal education program.',
+      'Tutored basic literacy and math to underprivileged students. 16 hours.'
   },
 ];
 

@@ -29,7 +29,7 @@ export const projects: Project[] = [
     id: 'fast-utilities',
     title: 'FAST Isb Utilities',
     tagline:
-      'The unified campus companion for FAST NUCES Islamabad — 10 campus tools in one deployed web app.',
+      '10 campus tools in one app. Live at FAST NUCES Islamabad.',
     category: 'Full Stack',
     year: '2026',
     tags: ['Next.js 14', 'TypeScript', 'Supabase', 'Tailwind CSS'],
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/ammarasad2005/Exam-Table',
     liveUrl: 'https://fast-nuces.vercel.app/',
     overview:
-      'FAST Isb Utilities consolidates 10+ student tools — timetable viewer, exam schedule finder, free-rooms finder, faculty directory, events calendar, lost & found, and more — into a single deployed web app. Read-heavy data is pre-parsed into static JSON for zero-latency filtering; only genuinely dynamic features go through Supabase.',
+      'FAST Isb Utilities puts 10 campus tools — timetables, exam schedules, free rooms, faculty directory — into one app. It is live and used by FAST NUCES Islamabad students.',
     problem:
       'FAST NUCES Islamabad students juggled 10+ separate tools and spreadsheets for timetables, exam schedules, room availability, faculty info, and events. Finding a free room or building a clash-free semester schedule required manual cross-referencing across multiple sources.',
     solution:
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     id: 'wayfinder',
     title: 'Wayfinder',
     tagline:
-      'Search with Google. Travel with Yango. — a mobile-first destination discovery app that hands off to Yango for the ride.',
+      'Find a place with Google. Get a ride with Yango.',
     category: 'Web Apps',
     year: '2026',
     tags: ['Next.js 16', 'React 19', 'Google Maps API', 'NextAuth'],
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/ammarasad2005/WayFinder',
     liveUrl: null,
     overview:
-      'Wayfinder compresses the "find a place → verify it is real → get a ride there" journey into a single three-tap flow. Users search for any destination in Pakistan via Google Places, land on a richly populated place detail page, and tap a single CTA that constructs a Yango deep link with the destination pre-filled.',
+      'Wayfinder compresses finding a place, verifying it, and getting a ride into three taps. Search with Google Places, verify on a rich place page, hand off to Yango via deep link.',
     problem:
       'Ride-hailing apps like Yango have weak in-app address indexing in Pakistan. Users had to manually pin-drop destinations, which often led to wrong pickups, especially for less-known locations.',
     solution:
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     id: 'gcr-fetch',
     title: 'GCR Fetch',
     tagline:
-      'A Chrome extension that bulk-downloads every Google Classroom resource as one organized ZIP.',
+      'Bulk-download every Google Classroom resource as one ZIP.',
     category: 'Tools',
     year: '2025',
     tags: ['Chrome Extension', 'Manifest V3', 'OAuth 2.0', 'Vercel Serverless'],
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/ammarasad2005/gcr-resources-fetch',
     liveUrl: null,
     overview:
-      'GCR Fetch is a Manifest V3 Chrome extension that bulk-downloads every resource from a Google Classroom course as a single organized ZIP. It replaces 20–25 minutes of manual clicking per course with a single scan-and-download, using hybrid DOM scraping and the Classroom REST API to catch lazy-loaded resources.',
+      'GCR Fetch is a Chrome extension that downloads every resource from a Google Classroom course as a single ZIP. It replaces 20–25 minutes of manual clicking with one scan — built because I got tired of clicking Download 47 times.',
     problem:
       'Downloading all resources from a Google Classroom course meant clicking "Download" on every file individually — often 40+ times per course. The author built this after getting tired of clicking Download 47 times.',
     solution:
@@ -125,7 +125,7 @@ export const projects: Project[] = [
     id: 'dramaghar',
     title: 'DramaGhar',
     tagline:
-      'A full-stack Pakistani drama tracking and streaming platform cataloguing 200+ dramas with per-episode analytics.',
+      '200+ Pakistani dramas. Stream, track, get reminders.',
     category: 'Full Stack',
     year: '2026',
     tags: ['Next.js 15', 'React 19', 'MongoDB Atlas', 'Supabase'],
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/ammarasad2005/Drama-Ghar',
     liveUrl: null,
     overview:
-      'DramaGhar is a web app for browsing, streaming, and tracking Pakistani TV dramas. It catalogs 200+ dramas across major channels (ARY Digital, HUM TV, Geo Entertainment) with embedded YouTube streaming, per-episode watch history analytics, a live Electronic Program Guide (EPG) TV-schedule grid, and role-based access control.',
+      'DramaGhar is a streaming and tracking platform for Pakistani TV dramas — 200+ titles across 5 channels, with watch history, watchlist, airing reminders, and a live TV schedule grid. Co-built with Hanzlah Ch.',
     problem:
       'Pakistani drama viewers scattered across YouTube, channel websites, and WhatsApp groups to track airing schedules and watch episodes. There was no single platform to discover, stream, and track Pakistani dramas with a watchlist and progress analytics.',
     solution:

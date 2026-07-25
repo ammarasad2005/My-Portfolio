@@ -19,26 +19,26 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
           </h1>
           
           <p className="text-sm sm:text-base text-[#444444] dark:text-[#cccccc] leading-relaxed max-w-[520px]">
-            I&apos;m Muhammad Ammar Asad, a full-stack web developer and 6th-semester B.S. Computer Science student at FAST-NUCES Islamabad. I build end-to-end web apps with TypeScript, React, Next.js, Node.js, and PostgreSQL — four deployed projects spanning campus utilities, ride-hailing integration, Chrome extensions, and streaming platforms. Seeking a full-stack development internship.
+            I&apos;m Muhammad Ammar Asad, a full-stack developer in Islamabad studying CS at FAST-NUCES. I&apos;ve shipped four web apps — a campus platform, a ride-hailing companion, a Chrome extension, and a drama streaming site. Looking for an internship.
           </p>
 
           {/* 4-Column Stat Counter Grid (2x2 on mobile, 4-col on sm+) */}
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 pt-2">
             <div className="flex flex-col">
               <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">4</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Deployed Projects</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Projects Shipped</span>
             </div>
             <div className="flex flex-col">
               <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">200+</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Dramas Indexed (DramaGhar)</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Dramas Catalogued</span>
             </div>
             <div className="flex flex-col">
               <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">10</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Campus Tools (FAST Utilities)</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Campus Tools</span>
             </div>
             <div className="flex flex-col">
               <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">6th</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Semester CS Student</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Semester, CS</span>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Clean Code</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I refuse to ship a feature I haven&apos;t tested end-to-end.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">I test what I ship.</p>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Continuous Learner</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">Currently exploring system design, AI integration, and multi-agent orchestration.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Currently exploring system design and AI.</p>
             </div>
           </div>
 
@@ -108,7 +108,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Builder Mindset</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">Four deployed projects, two hackathons, one volunteer stint — I build things.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Four projects shipped. I build things.</p>
             </div>
           </div>
         </div>
