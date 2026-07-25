@@ -12,6 +12,13 @@ export interface ExperienceEntry {
 
 export const experiences: ExperienceEntry[] = [
   {
+    period: 'Jul 2026 – Present',
+    role: 'Backend AI Engineer Intern',
+    organization: 'FlyRank AI',
+    description:
+      'Building backend systems for AI-driven products. First internship cohort at FlyRank AI.',
+  },
+  {
     period: '2026',
     role: 'Google Antigravity Community Hackathon — AISeekho',
     organization: 'Team of 5',

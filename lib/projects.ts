@@ -61,7 +61,7 @@ export const projects: Project[] = [
     id: 'wayfinder',
     title: 'Wayfinder',
     tagline:
-      'Find a place with Google. Get a ride with Yango.',
+      'Find a place with Google. Get a ride with Yango. — mobile-first, 3 taps to a ride.',
     category: 'Web Apps',
     year: '2026',
     tags: ['Next.js 16', 'React 19', 'Google Maps API', 'NextAuth'],
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     id: 'gcr-fetch',
     title: 'GCR Fetch',
     tagline:
-      'Bulk-download every Google Classroom resource as one ZIP.',
+      'Bulk-download every Google Classroom resource as one ZIP. ~95% time saved per course.',
     category: 'Tools',
     year: '2025',
     tags: ['Chrome Extension', 'Manifest V3', 'OAuth 2.0', 'Vercel Serverless'],
@@ -125,7 +125,7 @@ export const projects: Project[] = [
     id: 'dramaghar',
     title: 'DramaGhar',
     tagline:
-      '200+ Pakistani dramas. Stream, track, get reminders.',
+      '200+ Pakistani dramas. Stream, track, get reminders. Co-built with Hanzlah Ch.',
     category: 'Full Stack',
     year: '2026',
     tags: ['Next.js 15', 'React 19', 'MongoDB Atlas', 'Supabase'],

@@ -19,7 +19,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
           </h1>
           
           <p className="text-sm sm:text-base text-[#444444] dark:text-[#cccccc] leading-relaxed max-w-[520px]">
-            I&apos;m Muhammad Ammar Asad, a full-stack developer in Islamabad studying CS at FAST-NUCES. I&apos;ve shipped four web apps — a campus platform, a ride-hailing companion, a Chrome extension, and a drama streaming site. Looking for an internship.
+            I&apos;m Muhammad Ammar Asad, a full-stack developer in Islamabad. I build things because most software could work better than it does, and I&apos;d rather fix that than complain about it. Currently a Backend AI Engineer intern at FlyRank AI, studying CS at FAST-NUCES.
           </p>
 
           {/* 4-Column Stat Counter Grid (2x2 on mobile, 4-col on sm+) */}
@@ -75,7 +75,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Clean Code</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I test what I ship.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Full-stack, end-to-end, on my own.</p>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Problem Solver</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I built a Chrome extension because I got tired of clicking Download 47 times.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">I got tired of clicking Download 47 times. So I built a Chrome extension.</p>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Continuous Learner</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">Currently exploring system design and AI.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">AI where it matters, not where it&apos;s hype.</p>
             </div>
           </div>
 
@@ -108,7 +108,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Builder Mindset</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">Four projects shipped. I build things.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Four projects shipped, one live at my university.</p>
             </div>
           </div>
         </div>
