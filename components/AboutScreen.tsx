@@ -19,26 +19,26 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
           </h1>
           
           <p className="text-sm sm:text-base text-[#444444] dark:text-[#cccccc] leading-relaxed max-w-[520px]">
-            I&apos;m Ammar Asad, a full stack developer based in Islamabad, Pakistan. I enjoy turning ideas into products that are useful, performant and beautifully simple.
+            I&apos;m Muhammad Ammar Asad, a full-stack web developer and 6th-semester B.S. Computer Science student at FAST-NUCES Islamabad. I build end-to-end web apps with TypeScript, React, Next.js, Node.js, and PostgreSQL — four deployed projects spanning campus utilities, ride-hailing integration, Chrome extensions, and streaming platforms. Seeking a full-stack development internship.
           </p>
 
           {/* 4-Column Stat Counter Grid (2x2 on mobile, 4-col on sm+) */}
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 pt-2">
             <div className="flex flex-col">
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">2+</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Years Learning</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">15+</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Projects Shipped</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">500+</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Users Reached</span>
-            </div>
-            <div className="flex flex-col">
               <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">4</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Core Tech Stack</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Deployed Projects</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">200+</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Dramas Indexed (DramaGhar)</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">10</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Campus Tools (FAST Utilities)</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">6th</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Semester CS Student</span>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Clean Code</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I write code that is maintainable and easy to scale.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">I refuse to ship a feature I haven&apos;t tested end-to-end.</p>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Problem Solver</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I love turning complex problems into simple solutions.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">I built a Chrome extension because I got tired of clicking Download 47 times.</p>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Continuous Learner</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">Always exploring new tools, techniques and perspectives.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Currently exploring system design, AI integration, and multi-agent orchestration.</p>
             </div>
           </div>
 
@@ -108,7 +108,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Builder Mindset</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I enjoy building products end-to-end and learning in the process.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Four deployed projects, two hackathons, one volunteer stint — I build things.</p>
             </div>
           </div>
         </div>
@@ -125,9 +125,9 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
           </h3>
           
           <div className="font-mono text-xs sm:text-sm text-[#333333] dark:text-[#dddddd] space-y-1.5 leading-relaxed tracking-wide">
-            <p>JavaScript/TypeScript &bull; React &bull; Node.js</p>
-            <p>PostgreSQL &bull; Tailwind CSS &bull; Supabase</p>
-            <p>Docker &bull; Git &bull; AWS (Learning)</p>
+            <p>TypeScript &bull; React &bull; Next.js &bull; Node.js</p>
+            <p>PostgreSQL (Supabase) &bull; MongoDB (Atlas)</p>
+            <p>OAuth 2.0 &bull; GitHub Actions &bull; Chrome Extension MV3</p>
           </div>
         </div>
 

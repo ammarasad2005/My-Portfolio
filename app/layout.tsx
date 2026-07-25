@@ -3,8 +3,8 @@ import './globals.css'; // Global styles
 import {ThemeProvider} from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'My Google AI Studio App',
-  description: 'My Google AI Studio App',
+  title: 'Muhammad Ammar Asad — Full-Stack Developer',
+  description: 'Full-stack web developer in Islamabad. B.S. Computer Science student at FAST-NUCES. Building web apps with Next.js, TypeScript, and Supabase.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

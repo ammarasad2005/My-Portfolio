@@ -89,6 +89,15 @@ const RestApiLogo = () => (
   </svg>
 );
 
+const MongoDbLogo = () => (
+  <svg className="w-6 h-6" viewBox="0 0 100 100" fill="none">
+    <path d="M50 6 C40 28, 32 48, 35 74 C37 86, 44 94, 50 96 C56 94, 63 86, 65 74 C68 48, 60 28, 50 6 Z" fill="#47A248" />
+    <path d="M50 14 C50 40, 50 70, 50 92" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M50 50 C45 58, 42 64, 42 70" stroke="#1e6b2c" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+    <path d="M50 50 C55 58, 58 64, 58 70" stroke="#1e6b2c" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+  </svg>
+);
+
 const GitLogo = () => (
   <svg className="w-6 h-6" viewBox="0 0 100 100" fill="none">
     <path d="M92 45 L55 8 C52 5 48 5 45 8 L8 45 C5 48 5 52 8 55 L45 92 C48 95 52 95 55 92 L92 55 C95 52 95 48 92 45 Z" fill="#F05032" />
@@ -155,6 +164,7 @@ export default function SkillsAndToolsScreen() {
     { name: 'Node.js', icon: <NodeJsLogo /> },
     { name: 'Express.js', icon: <ExpressJsLogo /> },
     { name: 'PostgreSQL', icon: <PostgreSqlLogo /> },
+    { name: 'MongoDB', icon: <MongoDbLogo /> },
     { name: 'Supabase', icon: <SupabaseLogo /> },
     { name: 'REST APIs', icon: <RestApiLogo /> },
   ];
@@ -258,7 +268,7 @@ export default function SkillsAndToolsScreen() {
             Always learning
           </h3>
           <p className="font-script text-2xl sm:text-3xl text-[#2D2B26] dark:text-[#F5F2EE] leading-snug">
-            Currently exploring System Design, AI Integration and DevOps.
+            Currently exploring System design, AI integration, and multi-agent orchestration.
           </p>
         </div>
 

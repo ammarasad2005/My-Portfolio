@@ -116,7 +116,6 @@ export default function App() {
           {activeTab === 'case-study' && (
             <ProjectCaseStudyScreen
               projectId={selectedProjectId}
-              onBack={() => handleNavigate('projects')}
             />
           )}
           {activeTab === 'skills' && (

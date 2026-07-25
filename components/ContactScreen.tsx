@@ -1,19 +1,33 @@
 'use client';
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import {useState, useTransition} from 'react';
+import {motion, AnimatePresence} from 'motion/react';
+import {submitContact} from '@/app/actions/contact';
+
+type Status = 'idle' | 'submitting' | 'success' | 'error';
 
 export default function ContactScreen() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({name: '', email: '', message: ''});
+  const [status, setStatus] = useState<Status>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [isPending, startTransition] = useTransition();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: '', email: '', message: '' });
-    }, 4000);
+    setStatus('submitting');
+    setErrorMessage('');
+
+    startTransition(async () => {
+      const result = await submitContact(new FormData(e.target as HTMLFormElement));
+      if (result.ok) {
+        setStatus('success');
+        setFormData({name: '', email: '', message: ''});
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+        setErrorMessage(result.error ?? 'Something went wrong');
+      }
+    });
   };
 
   return (
@@ -47,8 +61,8 @@ export default function ContactScreen() {
           </svg>
           <div className="flex flex-col">
             <span className="text-xs font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Email</span>
-            <a href="mailto:ammar.asad.dev@gmail.com" className="text-xs text-[#555555] dark:text-[#aaaaaa] hover:text-[#D6702C] transition-colors">
-              ammar.asad.dev@gmail.com
+            <a href="mailto:ammarasad321993@gmail.com" className="text-xs text-[#555555] dark:text-[#aaaaaa] hover:text-[#D6702C] transition-colors">
+              ammarasad321993@gmail.com
             </a>
           </div>
         </div>
@@ -80,15 +94,28 @@ export default function ContactScreen() {
       {/* INTERACTIVE CONTACT FORM */}
       <form onSubmit={handleSubmit} className="flex flex-col gap-3.5 pt-1">
         <AnimatePresence>
-          {submitted && (
+          {status === 'success' && (
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: -4 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: -4 }}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
+              initial={{opacity: 0, scale: 0.95, y: -4}}
+              animate={{opacity: 1, scale: 1, y: 0}}
+              exit={{opacity: 0, scale: 0.95, y: -4}}
+              transition={{duration: 0.3, ease: 'easeOut'}}
+              role="status"
               className="bg-[#E2EBD8] dark:bg-[#2a3a1a] border border-[#B8D1A3] dark:border-[#3a5a2a] text-[#2C521A] dark:text-[#8bc34a] text-xs sm:text-sm p-3 rounded-md font-medium flex items-center justify-between shadow-2xs"
             >
-              <span>✓ Thank you! Your message has been sent successfully.</span>
+              <span>Thank you. Your message has been sent — I&apos;ll get back to you soon.</span>
+            </motion.div>
+          )}
+          {status === 'error' && (
+            <motion.div
+              initial={{opacity: 0, scale: 0.95, y: -4}}
+              animate={{opacity: 1, scale: 1, y: 0}}
+              exit={{opacity: 0, scale: 0.95, y: -4}}
+              transition={{duration: 0.3, ease: 'easeOut'}}
+              role="alert"
+              className="bg-[#FBEDED] dark:bg-[#3a1a1a] border border-[#E0A8A0] dark:border-[#5a2a2a] text-[#9B3D36] dark:text-[#e08880] text-xs sm:text-sm p-3 rounded-md font-medium flex items-center justify-between shadow-2xs"
+            >
+              <span>{errorMessage}</span>
             </motion.div>
           )}
         </AnimatePresence>
@@ -96,40 +123,55 @@ export default function ContactScreen() {
         {/* Name Field */}
         <input
           type="text"
+          name="name"
           placeholder="Your Name"
           required
+          minLength={2}
           value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full bg-[#F0ECE4] dark:bg-[#252220] border border-[#D8CEBA] dark:border-[#3a3530] rounded-md px-4 py-3 text-xs sm:text-sm text-[#1F1F1F] dark:text-[#F5F2EE] placeholder:text-[#888888] dark:text-[#777777] hover:border-[#B8AB96] dark:border-[#5a5550] focus:border-[#1F1F1F] dark:border-[#F5F2EE] focus:bg-[#F7F4EE] dark:bg-[#2a2622] outline-none transition-all duration-200"
+          onChange={(e) => setFormData({...formData, name: e.target.value})}
+          className="w-full bg-[#F0ECE4] dark:bg-[#252220] border border-[#D8CEBA] dark:border-[#3a3530] rounded-md px-4 py-3 text-xs sm:text-sm text-[#1F1F1F] dark:text-[#F5F2EE] placeholder:text-[#888888] dark:placeholder:text-[#777777] hover:border-[#B8AB96] dark:hover:border-[#5a5550] focus:border-[#1F1F1F] dark:focus:border-[#F5F2EE] focus:bg-[#F7F4EE] dark:focus:bg-[#2a2622] outline-none transition-all duration-200"
         />
 
         {/* Email Field */}
         <input
           type="email"
-          placeholder="Your Email"
+          name="email"
+          placeholder="you@example.com"
           required
           value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full bg-[#F0ECE4] dark:bg-[#252220] border border-[#D8CEBA] dark:border-[#3a3530] rounded-md px-4 py-3 text-xs sm:text-sm text-[#1F1F1F] dark:text-[#F5F2EE] placeholder:text-[#888888] dark:text-[#777777] hover:border-[#B8AB96] dark:border-[#5a5550] focus:border-[#1F1F1F] dark:border-[#F5F2EE] focus:bg-[#F7F4EE] dark:bg-[#2a2622] outline-none transition-all duration-200"
+          onChange={(e) => setFormData({...formData, email: e.target.value})}
+          className="w-full bg-[#F0ECE4] dark:bg-[#252220] border border-[#D8CEBA] dark:border-[#3a3530] rounded-md px-4 py-3 text-xs sm:text-sm text-[#1F1F1F] dark:text-[#F5F2EE] placeholder:text-[#888888] dark:placeholder:text-[#777777] hover:border-[#B8AB96] dark:hover:border-[#5a5550] focus:border-[#1F1F1F] dark:focus:border-[#F5F2EE] focus:bg-[#F7F4EE] dark:focus:bg-[#2a2622] outline-none transition-all duration-200"
         />
 
         {/* Message Field */}
         <textarea
+          name="message"
           placeholder="Your Message"
           rows={4}
           required
+          minLength={10}
           value={formData.message}
-          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full bg-[#F0ECE4] dark:bg-[#252220] border border-[#D8CEBA] dark:border-[#3a3530] rounded-md px-4 py-3 text-xs sm:text-sm text-[#1F1F1F] dark:text-[#F5F2EE] placeholder:text-[#888888] dark:text-[#777777] hover:border-[#B8AB96] dark:border-[#5a5550] focus:border-[#1F1F1F] dark:border-[#F5F2EE] focus:bg-[#F7F4EE] dark:bg-[#2a2622] outline-none transition-all duration-200 resize-none"
+          onChange={(e) => setFormData({...formData, message: e.target.value})}
+          className="w-full bg-[#F0ECE4] dark:bg-[#252220] border border-[#D8CEBA] dark:border-[#3a3530] rounded-md px-4 py-3 text-xs sm:text-sm text-[#1F1F1F] dark:text-[#F5F2EE] placeholder:text-[#888888] dark:placeholder:text-[#777777] hover:border-[#B8AB96] dark:hover:border-[#5a5550] focus:border-[#1F1F1F] dark:focus:border-[#F5F2EE] focus:bg-[#F7F4EE] dark:focus:bg-[#2a2622] outline-none transition-all duration-200 resize-none"
         ></textarea>
 
         {/* Submit CTA Button */}
         <button
           type="submit"
-          className="group w-full bg-[#1F1F1F] dark:bg-[#F5F2EE] text-white dark:text-[#1F1F1F] py-3.5 rounded-md font-medium text-xs sm:text-sm hover:bg-[#333333] dark:bg-[#dddddd] active:scale-[0.995] transition-all duration-200 flex items-center justify-center gap-2 shadow-xs hover:shadow-md cursor-pointer mt-1"
+          disabled={isPending || status === 'submitting'}
+          className="group w-full bg-[#1F1F1F] dark:bg-[#F5F2EE] text-white dark:text-[#1F1F1F] py-3.5 rounded-md font-medium text-xs sm:text-sm hover:bg-[#333333] dark:hover:bg-[#dddddd] active:scale-[0.995] transition-all duration-200 flex items-center justify-center gap-2 shadow-xs hover:shadow-md cursor-pointer mt-1 disabled:opacity-60 disabled:cursor-wait"
         >
-          <span>Send Message</span>
-          <span className="text-sm transition-transform duration-200 group-hover:translate-x-0.5">&rarr;</span>
+          {isPending || status === 'submitting' ? (
+            <>
+              <span className="inline-block w-3 h-3 border-2 border-white dark:border-[#1F1F1F] border-t-transparent rounded-full animate-spin" />
+              <span>Sending…</span>
+            </>
+          ) : (
+            <>
+              <span>Send Message</span>
+              <span className="text-sm transition-transform duration-200 group-hover:translate-x-0.5">&rarr;</span>
+            </>
+          )}
         </button>
       </form>
     </div>

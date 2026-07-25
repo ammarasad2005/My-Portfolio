@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import { experiences } from '@/lib/experience';
 
 interface ExperienceScreenProps {
   onNavigate?: (tab: string) => void;
@@ -40,24 +41,6 @@ const RubberStampSeal = () => (
 );
 
 export default function ExperienceScreen({ onNavigate }: ExperienceScreenProps) {
-  const experiences = [
-    {
-      period: '2024 - Present',
-      role: 'Freelance Full Stack Developer',
-      description: 'Architecting web applications and digital platforms for clients using React, Next.js, Node.js, and Supabase.',
-    },
-    {
-      period: '2023 - 2024',
-      role: 'Academic & Campus Lead',
-      description: 'Built FAST Utilities for 500+ computer science students. Managed course repositories, attendance tools, and schedule visualizers.',
-    },
-    {
-      period: '2022 - 2023',
-      role: 'Open Source Contributor',
-      description: 'Contributed to open source frontend repositories, optimizing performance and writing accessible component interfaces.',
-    },
-  ];
-
   return (
     <div className="flex flex-col gap-8">
       {/* PAGE TITLE & STICKY NOTE */}
@@ -109,7 +92,7 @@ export default function ExperienceScreen({ onNavigate }: ExperienceScreenProps) 
 
             {/* Role Title */}
             <h3 className="text-base sm:text-lg font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">
-              {exp.role}
+              {exp.role}{exp.organization ? ` · ${exp.organization}` : ''}
             </h3>
 
             {/* Description */}

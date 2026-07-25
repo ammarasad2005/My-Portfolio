@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { projects } from '@/lib/projects';
 
 interface ProjectsOverviewScreenProps {
   onOpenCaseStudy: (id: string) => void;
@@ -10,32 +11,7 @@ interface ProjectsOverviewScreenProps {
 export default function ProjectsOverviewScreen({ onOpenCaseStudy }: ProjectsOverviewScreenProps) {
   const [activeCategory, setActiveCategory] = useState<string>('All');
 
-  const projects = [
-    {
-      id: 'fast-utilities',
-      title: 'FAST Utilities',
-      subtitle: 'Campus platform used by 500+ students monthly.',
-      category: 'Full Stack',
-      tags: ['Next.js', 'Supabase', 'Tailwind CSS'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      id: 'dramaghar',
-      title: 'DramaGhar',
-      subtitle: 'Drama discovery platform for Pakistani drama lovers.',
-      category: 'Web Apps',
-      tags: ['Next.js', 'TMDB API', 'Tailwind CSS'],
-      image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      id: 'portfolio-v1',
-      title: 'Personal Portfolio',
-      subtitle: 'Minimalist paper-themed tactile developer portfolio.',
-      category: 'Tools',
-      tags: ['React', 'Tailwind CSS', 'Next.js'],
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-    },
-  ];
+  const categories = ['All', 'Full Stack', 'Web Apps', 'Tools'] as const;
 
   const filteredProjects = activeCategory === 'All'
     ? projects
@@ -60,7 +36,7 @@ export default function ProjectsOverviewScreen({ onOpenCaseStudy }: ProjectsOver
 
       {/* CATEGORY FILTER BAR */}
       <div className="flex items-center gap-2 border-b border-[#E0D8CE] dark:border-[#33302c] pb-3 text-xs sm:text-sm font-medium">
-        {['All', 'Full Stack', 'Web Apps', 'Tools'].map((category) => {
+        {categories.map((category) => {
           const isActive = activeCategory === category;
           return (
             <button
@@ -109,7 +85,7 @@ export default function ProjectsOverviewScreen({ onOpenCaseStudy }: ProjectsOver
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-[#555555] dark:text-[#aaaaaa] leading-relaxed">
-                  {project.subtitle}
+                  {project.tagline}
                 </p>
               </div>
 
