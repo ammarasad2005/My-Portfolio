@@ -4,7 +4,7 @@ import {ThemeProvider} from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Muhammad Ammar Asad — Full-Stack Developer',
-  description: 'Full-stack developer in Islamabad. Backend AI Engineer intern at FlyRank AI. I build web apps end-to-end — UI, API, database — that replace manual work. Four projects shipped, one live at FAST NUCES Islamabad.',
+  description: 'Full-stack developer in Islamabad. Backend AI Engineer Intern at FlyRank AI. I got tired of clicking Download 47 times, so I built a Chrome extension — that\'s the pattern across everything I ship: replace manual work with one working app.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

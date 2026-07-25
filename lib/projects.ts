@@ -149,8 +149,7 @@ export const projects: Project[] = [
     metrics: [
       { value: '200+', label: 'Dramas catalogued' },
       { value: '5', label: 'Major channels covered' },
-      { value: 'RBAC', label: 'User + admin roles' },
-      { value: '2026', label: 'Year' },
+      { value: '180/180', label: 'Self-rated on course rubric' },
     ],
   },
 ];

@@ -30,7 +30,7 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
                 A.
               </span>
               <p className="text-[11px] text-[#555555] dark:text-[#aaaaaa] leading-relaxed">
-                Full-stack developer in Islamabad. I build web apps that replace manual work.
+                Full-stack developer in Islamabad. Backend AI Engineer Intern at FlyRank AI.
               </p>
 
               {/* Social Icons Row */}
@@ -74,7 +74,7 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
                 GET IN TOUCH
               </h3>
               <p className="text-[11px] text-[#555555] dark:text-[#aaaaaa] leading-snug">
-                Let&apos;s collaborate...
+                Open to full-stack and backend AI engineering roles.
               </p>
               <Link
                 href="/contact"
@@ -240,7 +240,7 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
 
         {/* SUB-FOOTER LEGAL BAR */}
         <div className="flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-[#666666] dark:text-[#999999] pt-4 border-t border-[#E0D8CE]/60 dark:border-[#33302c]/60 gap-2">
-          <span>&copy; 2024 Muhammad Ammar Asad. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Muhammad Ammar Asad. All rights reserved.</span>
           <span>Built with Next.js + Tailwind CSS ❤️</span>
         </div>
 

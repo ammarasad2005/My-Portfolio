@@ -18,28 +18,28 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
       id: 'web-apps',
       icon: Layout,
       title: 'Web Apps',
-      description: 'Beautiful, responsive interfaces.',
+      description: 'Interfaces people actually use — not just demo well.',
       stack: ['React', 'Next.js', 'Tailwind', 'TypeScript'],
     },
     {
       id: 'apis',
       icon: Server,
       title: 'APIs & Backends',
-      description: 'Secure, scalable & structured.',
+      description: 'Auth, rate limits, and API keys that never touch the client.',
       stack: ['Node.js', 'Express', 'REST APIs', 'GraphQL'],
     },
     {
       id: 'databases',
       icon: Database,
       title: 'Databases',
-      description: 'Design, optimize & manage.',
+      description: 'Schemas that hold up once real people start using the app.',
       stack: ['PostgreSQL', 'Supabase', 'Prisma', 'MongoDB'],
     },
     {
       id: 'deployment',
       icon: Rocket,
       title: 'Deployment',
-      description: 'Ship reliable products.',
+      description: 'Ships to Vercel, then keeps working — cron jobs, refresh pipelines, the boring stuff.',
       stack: ['Vercel', 'Docker', 'CI/CD', 'Git'],
     },
   ];
@@ -139,7 +139,7 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
             <span className="text-[#D6702C]">that replace manual work.</span>
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-[#555555] dark:text-[#aaaaaa] max-w-[500px] leading-relaxed">
-            Full-stack developer in Islamabad. Backend AI Engineer intern at FlyRank AI. I build web apps end-to-end — UI, API, database — because most software could work better than it does.
+            Full-stack developer in Islamabad. Backend AI Engineer Intern at FlyRank AI. Four projects shipped — one of them live at my own university.
           </p>
           <div>
             <button
@@ -324,7 +324,7 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
         <p className="text-xs sm:text-sm text-[#444444] dark:text-[#cccccc] font-medium">
           Currently exploring:{' '}
           <span className="font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">
-            Agentic AI on the backend, full-stack by day.
+            Agentic AI — not the hype, the version that saves real time without wasting resources.
           </span>
         </p>
         <button

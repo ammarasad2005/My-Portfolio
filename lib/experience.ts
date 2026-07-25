@@ -23,7 +23,7 @@ export const experiences: ExperienceEntry[] = [
     role: 'Google Antigravity Community Hackathon — AISeekho',
     organization: 'Team of 5',
     description:
-      'Built Hamara-Rozgar — a 5-agent AI system for Pakistan\'s informal economy. Team of 5.',
+      'Built Hamara-Rozgar, a 5-agent AI marketplace for Pakistan\'s informal economy — scraped and deduplicated 11,608 real business listings across 532 map grid nodes.',
   },
   {
     period: 'Jan 2025',

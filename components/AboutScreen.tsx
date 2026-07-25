@@ -37,8 +37,8 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
               <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Campus Tools</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">6th</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Semester, CS</span>
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">3</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">GitHub Stars</span>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Clean Code</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">Full-stack, end-to-end, on my own.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">No shortcuts on auth or data — even when nobody&apos;s checking.</p>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Continuous Learner</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">AI where it matters, not where it&apos;s hype.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Not the hype — the version of AI that actually saves time.</p>
             </div>
           </div>
 
