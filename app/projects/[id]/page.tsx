@@ -1,16 +1,24 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import ProjectCaseStudyScreen from '@/components/ProjectCaseStudyScreen';
 import FooterSection from '@/components/FooterSection';
 import Link from 'next/link';
 import {ThemeToggle} from '@/components/ThemeToggle';
+import { projectIds } from '@/lib/projects';
 
 export default function ProjectCaseStudyPage() {
   const router = useRouter();
   const params = useParams();
   const projectId = typeof params?.id === 'string' ? params.id : 'fast-utilities';
+
+  // Guard: only allow real project IDs. Invalid IDs redirect to /projects.
+  useEffect(() => {
+    if (!projectIds.includes(projectId)) {
+      router.replace('/projects');
+    }
+  }, [projectId, router]);
 
   const handleNavigate = (tab: string) => {
     if (tab === 'home') router.push('/');
@@ -49,7 +57,6 @@ export default function ProjectCaseStudyPage() {
         <main className="flex-1 w-full px-4 sm:px-8 md:px-12 py-6 sm:py-10">
           <ProjectCaseStudyScreen
             projectId={projectId}
-            onBack={() => router.push('/projects')}
           />
         </main>
 

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Layout, Server, Database, Rocket, ChevronDown, ChevronUp } from 'lucide-react';
 import Image from 'next/image';
+import { projects } from '@/lib/projects';
 
 interface HomeScreenProps {
   onNavigate: (tab: string) => void;
@@ -17,28 +18,28 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
       id: 'web-apps',
       icon: Layout,
       title: 'Web Apps',
-      description: 'Beautiful, responsive interfaces.',
+      description: 'Interfaces people actually use — not just demo well.',
       stack: ['React', 'Next.js', 'Tailwind', 'TypeScript'],
     },
     {
       id: 'apis',
       icon: Server,
       title: 'APIs & Backends',
-      description: 'Secure, scalable & structured.',
+      description: 'Auth, rate limits, and API keys that never touch the client.',
       stack: ['Node.js', 'Express', 'REST APIs', 'GraphQL'],
     },
     {
       id: 'databases',
       icon: Database,
       title: 'Databases',
-      description: 'Design, optimize & manage.',
+      description: 'Schemas that hold up once real people start using the app.',
       stack: ['PostgreSQL', 'Supabase', 'Prisma', 'MongoDB'],
     },
     {
       id: 'deployment',
       icon: Rocket,
       title: 'Deployment',
-      description: 'Ship reliable products.',
+      description: 'Ships to Vercel, then keeps working — cron jobs, refresh pipelines, the boring stuff.',
       stack: ['Vercel', 'Docker', 'CI/CD', 'Git'],
     },
   ];
@@ -49,8 +50,8 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
       <section className="flex flex-col gap-4 md:hidden pt-1 pb-2">
         {/* Headline */}
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#1F1F1F] dark:text-[#F5F2EE] leading-[1.18]">
-          I build digital products that solve{' '}
-          <span className="text-[#D6702C]">real problems.</span>
+          I build full-stack web apps{' '}
+          <span className="text-[#D6702C]">that replace manual work.</span>
         </h1>
 
         {/* Integrated Micro Bio Card */}
@@ -62,7 +63,7 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
               <div className="w-full h-full relative bg-[#EAE5DC] dark:bg-[#252220] overflow-hidden rounded-2xs">
                 <Image
                   src="https://picsum.photos/seed/portrait321/400/400"
-                  alt="Ammar Asad"
+                  alt="Muhammad Ammar Asad"
                   fill
                   className="object-cover grayscale contrast-110"
                   referrerPolicy="no-referrer"
@@ -74,15 +75,15 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
           {/* Bio Details */}
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="flex items-center justify-between gap-1">
-              <h2 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE] truncate">Ammar Asad</h2>
+              <h2 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE] truncate">Muhammad Ammar Asad</h2>
               <span className="inline-flex items-center gap-1 text-[10px] font-mono text-[#2E7D32] dark:text-[#66bb6a] bg-[#E8F5E9] dark:bg-[#1a2e1a] px-1.5 py-0.5 rounded border border-[#C8E6C9] dark:border-[#2e5a30] shrink-0">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#4CAF50] dark:bg-[#66bb6a] animate-pulse"></span>
                 Available
               </span>
             </div>
-            <p className="text-xs text-[#555555] dark:text-[#aaaaaa] font-medium">Full Stack Developer</p>
+            <p className="text-xs text-[#555555] dark:text-[#aaaaaa] font-medium">Full-Stack Developer · Intern @ FlyRank AI</p>
             <p className="text-[11px] text-[#666666] dark:text-[#999999] leading-tight">
-              📍 Islamabad, Pakistan • Clean, scalable web apps
+              📍 Islamabad • CS @ FAST-NUCES
             </p>
           </div>
         </div>
@@ -94,10 +95,10 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
           </span>
           <div className="flex flex-wrap gap-1.5">
             <span className="font-mono text-xs bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#333333] dark:text-[#dddddd] px-2 py-0.5 rounded">
-              Next.js
+              TypeScript
             </span>
             <span className="font-mono text-xs bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#333333] dark:text-[#dddddd] px-2 py-0.5 rounded">
-              TypeScript
+              Next.js
             </span>
             <span className="font-mono text-xs bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#333333] dark:text-[#dddddd] px-2 py-0.5 rounded">
               Node.js
@@ -106,7 +107,7 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
               PostgreSQL
             </span>
             <span className="font-mono text-xs bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#333333] dark:text-[#dddddd] px-2 py-0.5 rounded">
-              Tailwind
+              Python
             </span>
           </div>
         </div>
@@ -134,11 +135,11 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
         {/* Left Column (Headline, Paragraph, CTA) */}
         <div className="col-span-1 md:col-span-7 flex flex-col justify-between gap-6">
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#1F1F1F] dark:text-[#F5F2EE] leading-[1.12]">
-            I build digital products that solve{' '}
-            <span className="text-[#D6702C]">real problems.</span>
+            I build full-stack web apps{' '}
+            <span className="text-[#D6702C]">that replace manual work.</span>
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-[#555555] dark:text-[#aaaaaa] max-w-[500px] leading-relaxed">
-            Full stack developer focused on building clean, scalable and impactful web applications.
+            Full-stack developer in Islamabad. Backend AI Engineer Intern at FlyRank AI. Four projects shipped — one of them live at my own university.
           </p>
           <div>
             <button
@@ -186,9 +187,9 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
                 <path d="M 5,30 L 10,35 L 15,30" />
               </svg>
               <div className="flex flex-col font-script text-lg sm:text-xl leading-tight text-[#444444] dark:text-[#cccccc]">
-                <span>Builder</span>
-                <span>Problem Solver</span>
-                <span>Lifelong Learner</span>
+                <span>Frontend</span>
+                <span>Backend</span>
+                <span>Database</span>
               </div>
             </div>
           </div>
@@ -281,79 +282,40 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Project Card 1 */}
-          <div 
-            onClick={() => onOpenCaseStudy('fast-utilities')} 
-            className="flex flex-col gap-3 group cursor-pointer"
-          >
-            <div className="w-full aspect-[16/10] max-h-[220px] sm:max-h-[260px] bg-[#E3DDD1] dark:bg-[#252220] rounded-lg border border-[#D0C7B8] dark:border-[#3a3530] overflow-hidden p-2 relative">
-              <div className="w-full h-full relative rounded-md overflow-hidden shadow-inner border border-[#C5BCAD] dark:border-[#4a4540]">
-                <Image
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-                  alt="FAST Utilities Dashboard"
-                  fill
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  referrerPolicy="no-referrer"
-                />
+          {projects.slice(0, 2).map((project) => (
+            <div
+              key={project.id}
+              onClick={() => onOpenCaseStudy(project.id)}
+              className="flex flex-col gap-3 group cursor-pointer"
+            >
+              <div className="w-full aspect-[16/10] max-h-[220px] sm:max-h-[260px] bg-[#E3DDD1] dark:bg-[#252220] rounded-lg border border-[#D0C7B8] dark:border-[#3a3530] overflow-hidden p-2 relative">
+                <div className="w-full h-full relative rounded-md overflow-hidden shadow-inner border border-[#C5BCAD] dark:border-[#4a4540]">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col gap-1">
+                <h3 className="text-base font-bold text-[#1F1F1F] dark:text-[#F5F2EE] group-hover:text-[#D6702C] transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-xs text-[#555555] dark:text-[#aaaaaa] truncate">
+                  {project.tagline}
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {project.tags.slice(0, 3).map((tag) => (
+                  <span key={tag} className="font-mono text-[11px] bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#444444] dark:text-[#cccccc] px-2 py-0.5 rounded">
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
-            <div className="flex flex-col gap-1">
-              <h3 className="text-base font-bold text-[#1F1F1F] dark:text-[#F5F2EE] group-hover:text-[#D6702C] transition-colors">
-                FAST Utilities
-              </h3>
-              <p className="text-xs text-[#555555] dark:text-[#aaaaaa]">
-                Campus platform used by 500+ students monthly.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-1.5">
-              <span className="font-mono text-[11px] bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#444444] dark:text-[#cccccc] px-2 py-0.5 rounded">
-                Next.js
-              </span>
-              <span className="font-mono text-[11px] bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#444444] dark:text-[#cccccc] px-2 py-0.5 rounded">
-                Supabase
-              </span>
-              <span className="font-mono text-[11px] bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#444444] dark:text-[#cccccc] px-2 py-0.5 rounded">
-                Tailwind
-              </span>
-            </div>
-          </div>
-
-          {/* Project Card 2 */}
-          <div 
-            onClick={() => onOpenCaseStudy('dramaghar')} 
-            className="flex flex-col gap-3 group cursor-pointer"
-          >
-            <div className="w-full aspect-[16/10] max-h-[220px] sm:max-h-[260px] bg-[#E3DDD1] dark:bg-[#252220] rounded-lg border border-[#D0C7B8] dark:border-[#3a3530] overflow-hidden p-2 relative">
-              <div className="w-full h-full relative rounded-md overflow-hidden shadow-inner border border-[#C5BCAD] dark:border-[#4a4540]">
-                <Image
-                  src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=800&q=80"
-                  alt="DramaGhar Platform"
-                  fill
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col gap-1">
-              <h3 className="text-base font-bold text-[#1F1F1F] dark:text-[#F5F2EE] group-hover:text-[#D6702C] transition-colors">
-                DramaGhar
-              </h3>
-              <p className="text-xs text-[#555555] dark:text-[#aaaaaa]">
-                Drama discovery platform for Pakistani drama lovers.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-1.5">
-              <span className="font-mono text-[11px] bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#444444] dark:text-[#cccccc] px-2 py-0.5 rounded">
-                Next.js
-              </span>
-              <span className="font-mono text-[11px] bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#444444] dark:text-[#cccccc] px-2 py-0.5 rounded">
-                TMDB API
-              </span>
-              <span className="font-mono text-[11px] bg-[#EAE5DC] dark:bg-[#252220] border border-[#D8D0C3] dark:border-[#3a3530] text-[#444444] dark:text-[#cccccc] px-2 py-0.5 rounded">
-                Tailwind
-              </span>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -362,7 +324,7 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
         <p className="text-xs sm:text-sm text-[#444444] dark:text-[#cccccc] font-medium">
           Currently exploring:{' '}
           <span className="font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">
-            System Design, AI Tools, and better ways to ship.
+            Agentic AI — how much manual work it can cut is what keeps pulling me back.
           </span>
         </p>
         <button

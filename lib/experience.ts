@@ -1,0 +1,63 @@
+/**
+ * Real experience and education data, sourced from the resume.
+ */
+
+export interface ExperienceEntry {
+  period: string;
+  role: string;
+  organization: string;
+  description: string;
+  link?: string;
+}
+
+export const experiences: ExperienceEntry[] = [
+  {
+    period: 'Jul 2026 – Present',
+    role: 'Backend AI Engineer Intern',
+    organization: 'FlyRank AI',
+    description:
+      'Building backend systems for AI-driven products. First internship cohort at FlyRank AI.',
+  },
+  {
+    period: '2026',
+    role: 'Google Antigravity Community Hackathon — AISeekho',
+    organization: 'Team of 5',
+    description:
+      'Built Hamara-Rozgar, a 5-agent AI marketplace for Pakistan\'s informal economy — scraped and deduplicated 11,608 real business listings across 532 map grid nodes.',
+  },
+  {
+    period: 'Jan 2025',
+    role: 'National AI Hackathon',
+    organization: 'atomcamp @ FAST-NUCES Islamabad',
+    description:
+      'Solo competitor. Two days, agentic AI.',
+  },
+  {
+    period: 'Winter 2025',
+    role: 'FAST Problem Solving Competition (FPSC)',
+    organization: 'ACM NUCES',
+    description:
+      'Solo competitor. FAST\'s inter-semester programming contest.',
+  },
+  {
+    period: 'Sep 2024 – Dec 2024',
+    role: 'Volunteer Literacy Tutor',
+    organization: 'Karwaan-e-Mudabbir',
+    description:
+      'Tutored basic literacy and math to underprivileged students. 16 hours.'
+  },
+];
+
+export interface EducationEntry {
+  degree: string;
+  institution: string;
+  period: string;
+  detail: string;
+}
+
+export const education: EducationEntry = {
+  degree: 'B.S. Computer Science',
+  institution: 'FAST-NUCES, Islamabad',
+  period: '2023 – 2027',
+  detail: '6th semester',
+};

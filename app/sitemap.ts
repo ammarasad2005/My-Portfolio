@@ -1,4 +1,5 @@
 import type {MetadataRoute} from 'next';
+import { projectIds } from '@/lib/projects';
 
 // Phase 2 TODO: replace with the production deployment URL once live.
 const SITE_URL =
@@ -14,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {path: '/skills', priority: 0.6, changeFrequency: 'yearly' as const},
     {path: '/contact', priority: 0.5, changeFrequency: 'yearly' as const},
   ];
-  const projects = ['fast-utilities', 'dramaghar', 'portfolio-v1'];
 
   return [
     ...routes.map((r) => ({
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: r.changeFrequency,
       priority: r.priority,
     })),
-    ...projects.map((id) => ({
+    ...projectIds.map((id) => ({
       url: `${SITE_URL}/projects/${id}`,
       lastModified: now,
       changeFrequency: 'yearly' as const,

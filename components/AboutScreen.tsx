@@ -19,26 +19,26 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
           </h1>
           
           <p className="text-sm sm:text-base text-[#444444] dark:text-[#cccccc] leading-relaxed max-w-[520px]">
-            I&apos;m Ammar Asad, a full stack developer based in Islamabad, Pakistan. I enjoy turning ideas into products that are useful, performant and beautifully simple.
+            I&apos;m Muhammad Ammar Asad, a full-stack developer in Islamabad. I don&apos;t start from a tech stack — I start from a problem I&apos;ve actually run into: clicking Download 47 times on Google Classroom, digging through Google Sheets for an exam schedule that should&apos;ve been one page. Most people&apos;s brains file that under &quot;annoying&quot; and move on. Mine files it under &quot;buildable.&quot; Once I&apos;ve got the problem clearly, the architecture is usually the easy part — full-stack is just how I get it from idea to something other people can actually open and use. Four shipped that way, one of them live at my own university. Currently a Backend AI Engineer intern at FlyRank AI, studying CS at FAST-NUCES.
           </p>
 
           {/* 4-Column Stat Counter Grid (2x2 on mobile, 4-col on sm+) */}
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 pt-2">
             <div className="flex flex-col">
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">2+</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Years Learning</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">15+</span>
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">4</span>
               <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Projects Shipped</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">500+</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Users Reached</span>
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">200+</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Dramas Catalogued</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">4</span>
-              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Core Tech Stack</span>
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">10</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">Campus Tools</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">3</span>
+              <span className="text-[11px] sm:text-xs text-[#666666] dark:text-[#999999] leading-tight mt-0.5">GitHub Stars</span>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Clean Code</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I write code that is maintainable and easy to scale.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">No shortcuts on auth or data — even when nobody&apos;s checking.</p>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Problem Solver</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I love turning complex problems into simple solutions.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Built FAST Isb Utilities because I was the one digging through Google Sheets for my own exam schedule.</p>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Continuous Learner</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">Always exploring new tools, techniques and perspectives.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">AI is one more tool in the stack — used when it&apos;s faster than SQL, skipped when it isn&apos;t.</p>
             </div>
           </div>
 
@@ -108,7 +108,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Builder Mindset</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I enjoy building products end-to-end and learning in the process.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Four projects shipped, one live at my university.</p>
             </div>
           </div>
         </div>
@@ -125,9 +125,9 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
           </h3>
           
           <div className="font-mono text-xs sm:text-sm text-[#333333] dark:text-[#dddddd] space-y-1.5 leading-relaxed tracking-wide">
-            <p>JavaScript/TypeScript &bull; React &bull; Node.js</p>
-            <p>PostgreSQL &bull; Tailwind CSS &bull; Supabase</p>
-            <p>Docker &bull; Git &bull; AWS (Learning)</p>
+            <p>TypeScript &bull; React &bull; Next.js &bull; Node.js</p>
+            <p>PostgreSQL (Supabase) &bull; MongoDB (Atlas)</p>
+            <p>OAuth 2.0 &bull; GitHub Actions &bull; Chrome Extension MV3</p>
           </div>
         </div>
 
