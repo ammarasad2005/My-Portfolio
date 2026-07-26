@@ -324,7 +324,7 @@ export default function HomeScreen({ onNavigate, onOpenCaseStudy }: HomeScreenPr
         <p className="text-xs sm:text-sm text-[#444444] dark:text-[#cccccc] font-medium">
           Currently exploring:{' '}
           <span className="font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">
-            Agentic AI — not the hype, the version that saves real time without wasting resources.
+            Agentic AI — how much manual work it can cut is what keeps pulling me back.
           </span>
         </p>
         <button

@@ -74,7 +74,7 @@ export default function FooterSection({ onNavigate }: FooterSectionProps) {
                 GET IN TOUCH
               </h3>
               <p className="text-[11px] text-[#555555] dark:text-[#aaaaaa] leading-snug">
-                Open to full-stack and backend AI engineering roles.
+                Open to full-stack roles — frontend, backend, or both.
               </p>
               <Link
                 href="/contact"

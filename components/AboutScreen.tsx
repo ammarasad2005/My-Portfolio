@@ -19,7 +19,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
           </h1>
           
           <p className="text-sm sm:text-base text-[#444444] dark:text-[#cccccc] leading-relaxed max-w-[520px]">
-            I&apos;m Muhammad Ammar Asad, a full-stack developer in Islamabad. I build things because most software could work better than it does, and I&apos;d rather fix that than complain about it. Currently a Backend AI Engineer intern at FlyRank AI, studying CS at FAST-NUCES.
+            I&apos;m Muhammad Ammar Asad, a full-stack developer in Islamabad. I don&apos;t start from a tech stack — I start from a problem I&apos;ve actually run into: clicking Download 47 times on Google Classroom, digging through Google Sheets for an exam schedule that should&apos;ve been one page. Most people&apos;s brains file that under &quot;annoying&quot; and move on. Mine files it under &quot;buildable.&quot; Once I&apos;ve got the problem clearly, the architecture is usually the easy part — full-stack is just how I get it from idea to something other people can actually open and use. Four shipped that way, one of them live at my own university. Currently a Backend AI Engineer intern at FlyRank AI, studying CS at FAST-NUCES.
           </p>
 
           {/* 4-Column Stat Counter Grid (2x2 on mobile, 4-col on sm+) */}
@@ -86,7 +86,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Problem Solver</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">I got tired of clicking Download 47 times. So I built a Chrome extension.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">Built FAST Isb Utilities because I was the one digging through Google Sheets for my own exam schedule.</p>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export default function AboutScreen({ onNavigate }: AboutScreenProps) {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="text-sm font-bold text-[#1F1F1F] dark:text-[#F5F2EE]">Continuous Learner</h3>
-              <p className="text-xs text-[#666666] dark:text-[#999999]">Not the hype — the version of AI that actually saves time.</p>
+              <p className="text-xs text-[#666666] dark:text-[#999999]">AI is one more tool in the stack — used when it&apos;s faster than SQL, skipped when it isn&apos;t.</p>
             </div>
           </div>
 
